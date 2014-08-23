@@ -1,0 +1,63 @@
+<TaskerData sr="" dvi="1" tv="4.4u2m">
+	<Task sr="task41">
+		<cdate>1407385982443</cdate>
+		<edate>1408201909173</edate>
+		<id>41</id>
+		<nme>💬 Say Location</nme>
+		<pri>10</pri>
+		<Action sr="act0" ve="6">
+			<code>559</code>
+			<Str sr="arg0" ve="3">Let me check that.</Str>
+			<Str sr="arg1" ve="3">default:default</Str>
+			<Int sr="arg2" val="3"/>
+			<Int sr="arg3" val="5"/>
+			<Int sr="arg4" val="5"/>
+			<Int sr="arg5" val="1"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+		</Action>
+		<Action sr="act1" ve="6">
+			<code>902</code>
+			<Int sr="arg0" val="2"/>
+			<Int sr="arg1" val="10"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act2" ve="6">
+			<code>118</code>
+			<Str sr="arg0" ve="3">maps.google.com</Str>
+			<Str sr="arg1" ve="3">maps/api/geocode/json</Str>
+			<Str sr="arg2" ve="3">latlng=%LOC
+sensor=false
+language=en</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="10"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+		</Action>
+		<Action sr="act3" ve="6">
+			<code>129</code>
+			<Str sr="arg0" ve="3">var data=JSON.parse(global('HTTPD'));
+setGlobal('LastAddress', data['results'][0]['formatted_address']);</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+		</Action>
+		<Action sr="act4" ve="6">
+			<code>559</code>
+			<Str sr="arg0" ve="3">You are at %LastAddress</Str>
+			<Str sr="arg1" ve="3">default:default</Str>
+			<Int sr="arg2" val="3"/>
+			<Int sr="arg3" val="5"/>
+			<Int sr="arg4" val="5"/>
+			<Int sr="arg5" val="1"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+		</Action>
+		<Img sr="icn" ve="2">
+			<nme>hl_ab_device_access_location_found</nme>
+		</Img>
+	</Task>
+</TaskerData>

@@ -1,0 +1,120 @@
+<TaskerData sr="" dvi="1" tv="4.4u3m">
+	<dmetric>1080.0,1776.0</dmetric>
+	<Profile sr="prof5" ve="2">
+		<cdate>1322875031772</cdate>
+		<edate>1408821215348</edate>
+		<flags>16</flags>
+		<id>5</id>
+		<mid0>6</mid0>
+		<mid1>59</mid1>
+		<nme>📷 Silence Camera</nme>
+		<App sr="con0" ve="2">
+			<cls0>com.android.camera.CameraLauncher</cls0>
+			<flags>2</flags>
+			<label0>Camera</label0>
+			<pkg0>com.google.android.GoogleCamera</pkg0>
+		</App>
+	</Profile>
+	<Project sr="proj0" ve="2">
+		<cdate>1408821140615</cdate>
+		<name>CameraMute</name>
+		<pids>5</pids>
+		<psort>Alpha</psort>
+		<scenes>Muted Icon</scenes>
+		<tids>58,6,59</tids>
+		<Img sr="icon" ve="2">
+			<nme>hl_device_access_camera</nme>
+		</Img>
+	</Project>
+	<Scene sr="sceneMuted Icon">
+		<cdate>1361323151406</cdate>
+		<edate>1408821236134</edate>
+		<heightLand>-1</heightLand>
+		<heightPort>109</heightPort>
+		<nme>Muted Icon</nme>
+		<widthLand>-1</widthLand>
+		<widthPort>107</widthPort>
+		<ImageElement sr="elements0" ve="2">
+			<clickTask>58</clickTask>
+			<flags>4</flags>
+			<geom>0,0,106,97,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">Muted</Str>
+			<Img sr="arg1" ve="2">
+				<nme>hd_device_access_volume_muted</nme>
+			</Img>
+			<Int sr="arg2" val="255"/>
+			<Str sr="arg3" ve="3">#</Str>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3">#77333333</Str>
+				<Str sr="arg3" ve="3">#77333333</Str>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</ImageElement>
+		<PropertiesElement sr="props">
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#33FFFFFF</Str>
+			<Int sr="arg3" val="0"/>
+			<Str sr="arg4" ve="3">Muted Icon</Str>
+			<Str sr="arg5" ve="3"/>
+			<Img sr="arg6" ve="2"/>
+			<Str sr="arg7" ve="3"/>
+		</PropertiesElement>
+	</Scene>
+	<Task sr="task58">
+		<cdate>1361323528946</cdate>
+		<edate>1361323528946</edate>
+		<id>58</id>
+		<Action sr="act0" ve="6">
+			<code>49</code>
+			<Str sr="arg0" ve="3">Muted Icon</Str>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%TRUN</lhs>
+					<op>3</op>
+					<rhs>Silence</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+	</Task>
+	<Task sr="task59">
+		<cdate>1361323740300</cdate>
+		<edate>1408821226733</edate>
+		<id>59</id>
+		<nme>Hide Mute Icon</nme>
+		<Action sr="act0" ve="6">
+			<code>49</code>
+			<Str sr="arg0" ve="3">Muted Icon</Str>
+		</Action>
+	</Task>
+	<Task sr="task6">
+		<cdate>1332335481311</cdate>
+		<edate>1408821244180</edate>
+		<id>6</id>
+		<nme>Silence</nme>
+		<Action sr="act0" ve="6">
+			<code>310</code>
+			<Int sr="arg0" val="1"/>
+		</Action>
+		<Action sr="act1" ve="6">
+			<code>47</code>
+			<Str sr="arg0" ve="3">Muted Icon</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="200"/>
+			<Int sr="arg4" val="1"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Img sr="icn" ve="2">
+			<nme>hl_device_access_volume_muted</nme>
+		</Img>
+	</Task>
+</TaskerData>

@@ -1,0 +1,38 @@
+<TaskerData sr="" dvi="1" tv="4.0u1m">
+    <Profile sr="prof24" ve="2">
+        <cdate>1322875032080</cdate>
+        <edate>1370610573034</edate>
+        <flags>16</flags>
+        <id>24</id>
+        <mid0>25</mid0>
+        <nme>Phone Ringing</nme>
+        <Event sr="con0" ve="2">
+            <code>6</code>
+            <Str sr="arg0" ve="3"/>
+        </Event>
+    </Profile>
+    <Task sr="task25">
+        <cdate>1332335481305</cdate>
+        <edate>1370610573033</edate>
+        <id>25</id>
+        <pri>10</pri>
+        <Action sr="act0" ve="3">
+            <code>590</code>
+            <Str sr="arg0" ve="3">%CNAME</Str>
+            <Str sr="arg1" ve="3"/>
+            <Int sr="arg2" val="0"/>
+        </Action>
+        <Action sr="act1" ve="3">
+            <code>559</code>
+            <Str sr="arg0" ve="3">Anruf von %CNAME1</Str>
+            <Str sr="arg1" ve="3">com.google.android.tts:deu-DEU</Str>
+            <Int sr="arg2" val="2"/>
+            <Int sr="arg3" val="5"/>
+            <Int sr="arg4" val="5"/>
+            <Int sr="arg5" val="0"/>
+        </Action>
+        <Img sr="icn" ve="2">
+            <nme>hd_social_person</nme>
+        </Img>
+    </Task>
+</TaskerData>

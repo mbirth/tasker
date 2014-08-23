@@ -1,0 +1,383 @@
+<TaskerData sr="" dvi="1" tv="4.4u3m">
+	<dmetric>720.0,1184.0</dmetric>
+	<Profile sr="prof10" ve="2">
+		<cdate>1408818362914</cdate>
+		<clp>true</clp>
+		<edate>1408818382949</edate>
+		<id>10</id>
+		<mid0>9</mid0>
+		<nme>Check/Reset Endtime</nme>
+		<Time sr="con0">
+			<fh>-1</fh>
+			<fm>-1</fm>
+			<rep>2</rep>
+			<repval>2</repval>
+			<th>-1</th>
+			<tm>-1</tm>
+		</Time>
+	</Profile>
+	<Profile sr="prof2" ve="2">
+		<cdate>1407359874845</cdate>
+		<clp>true</clp>
+		<edate>1408817622594</edate>
+		<id>2</id>
+		<mid0>5</mid0>
+		<nme>Movement Detected</nme>
+		<Event sr="con0" ve="2">
+			<code>599</code>
+			<Str sr="arg0" ve="3">org.motion.detector.ACTION_GLOBAL_BROADCAST</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+		</Event>
+	</Profile>
+	<Profile sr="prof7" ve="2">
+		<cdate>1408810584607</cdate>
+		<clp>true</clp>
+		<edate>1408802784182</edate>
+		<id>7</id>
+		<mid0>6</mid0>
+		<mid1>6</mid1>
+		<nme>Orientation Change</nme>
+		<State sr="con0" ve="2">
+			<code>122</code>
+			<Int sr="arg0" val="0"/>
+		</State>
+	</Profile>
+	<Profile sr="prof8" ve="2">
+		<cdate>1408810584752</cdate>
+		<clp>true</clp>
+		<edate>1408802314772</edate>
+		<id>8</id>
+		<mid0>4</mid0>
+		<nme>Show Bar if time left</nme>
+		<State sr="con0" ve="2">
+			<code>165</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%PowerDownTime</lhs>
+					<op>7</op>
+					<rhs>0</rhs>
+				</Condition>
+			</ConditionList>
+		</State>
+	</Profile>
+	<Project sr="proj0" ve="2">
+		<cdate>1408797356058</cdate>
+		<name>PowerDownTimer</name>
+		<pids>2,7,8,10</pids>
+		<psort>Alpha</psort>
+		<scenes>📱 Countdown</scenes>
+		<tids>5,9,6,4</tids>
+		<Img sr="icon" ve="2">
+			<nme>hl_device_access_data_usage</nme>
+		</Img>
+	</Project>
+	<Scene sr="scene📱 Countdown">
+		<cdate>1408752136929</cdate>
+		<edate>1408810702795</edate>
+		<heightLand>20</heightLand>
+		<heightPort>20</heightPort>
+		<nme>📱 Countdown</nme>
+		<widthLand>1280</widthLand>
+		<widthPort>720</widthPort>
+		<RectElement sr="elements0">
+			<flags>4</flags>
+			<geom>0,0,720,20,0,0,1280,20</geom>
+			<Str sr="arg0" ve="3">SecondsLeft</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#FF00FF2E</Str>
+			<Str sr="arg3" ve="3"/>
+			<Int sr="arg4" val="0"/>
+			<Str sr="arg5" ve="3">#FF000000</Str>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+		</RectElement>
+		<PropertiesElement sr="props">
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#00FFFFFF</Str>
+			<Int sr="arg3" val="0"/>
+			<Str sr="arg4" ve="3">Countdown</Str>
+			<Str sr="arg5" ve="3"/>
+			<Img sr="arg6" ve="2"/>
+			<Str sr="arg7" ve="3"/>
+		</PropertiesElement>
+	</Scene>
+	<Task sr="task4">
+		<cdate>1408753205686</cdate>
+		<edate>1408817594186</edate>
+		<id>4</id>
+		<nme>🔜 Countdown</nme>
+		<pri>10</pri>
+		<Action sr="act0" ve="6">
+			<code>11820</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.intangibleobject.securesettings.plugin.extra.BLURB>Screen &amp; Keyboard Lights On
+1 Second</com.intangibleobject.securesettings.plugin.extra.BLURB>
+					<com.intangibleobject.securesettings.plugin.extra.BLURB-type>java.lang.String</com.intangibleobject.securesettings.plugin.extra.BLURB-type>
+					<com.intangibleobject.securesettings.plugin.extra.SETTING>wake_device</com.intangibleobject.securesettings.plugin.extra.SETTING>
+					<com.intangibleobject.securesettings.plugin.extra.SETTING-type>java.lang.String</com.intangibleobject.securesettings.plugin.extra.SETTING-type>
+					<com.intangibleobject.securesettings.plugin.extra.WAKE_LOCK_DURATION>1000</com.intangibleobject.securesettings.plugin.extra.WAKE_LOCK_DURATION>
+					<com.intangibleobject.securesettings.plugin.extra.WAKE_LOCK_DURATION-type>java.lang.Long</com.intangibleobject.securesettings.plugin.extra.WAKE_LOCK_DURATION-type>
+					<com.intangibleobject.securesettings.plugin.extra.WAKE_LOCK_TYPE>full</com.intangibleobject.securesettings.plugin.extra.WAKE_LOCK_TYPE>
+					<com.intangibleobject.securesettings.plugin.extra.WAKE_LOCK_TYPE-type>java.lang.String</com.intangibleobject.securesettings.plugin.extra.WAKE_LOCK_TYPE-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Screen &amp; Keyboard Lights On
+1 Second</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.intangibleobject.securesettings.plugin</Str>
+			<Str sr="arg2" ve="3">Secure Settings</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act1" ve="6">
+			<code>812</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="23"/>
+		</Action>
+		<Action sr="act10" ve="6">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%sceneon</Str>
+			<Str sr="arg1" ve="3">1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act11" ve="6">
+			<code>38</code>
+		</Action>
+		<Action sr="act12" ve="6">
+			<code>30</code>
+			<Int sr="arg0" val="100"/>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act13" ve="6">
+			<code>135</code>
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg2" ve="3">StepDown</Str>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%TIMES</lhs>
+					<op>6</op>
+					<rhs>%PowerDownTime</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act14" ve="6">
+			<code>58</code>
+			<Str sr="arg0" ve="3">📱 Countdown</Str>
+			<Str sr="arg1" ve="3">SecondsLeft</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3">
+				<var>1</var>
+			</Int>
+			<Int sr="arg4" val="4"/>
+			<Int sr="arg5" val="50"/>
+		</Action>
+		<Action sr="act15" ve="6">
+			<code>49</code>
+			<Str sr="arg0" ve="3">📱 Countdown</Str>
+		</Action>
+		<Action sr="act16" ve="6">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%PowerDownTime</Str>
+			<Str sr="arg1" ve="3">0</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act17" ve="6">
+			<code>16</code>
+		</Action>
+		<Action sr="act2" ve="6">
+			<code>49</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">📱 Countdown</Str>
+		</Action>
+		<Action sr="act3" ve="6">
+			<code>46</code>
+			<Str sr="arg0" ve="3">📱 Countdown</Str>
+		</Action>
+		<Action sr="act4" ve="6">
+			<code>300</code>
+			<label>StepDown</label>
+		</Action>
+		<Action sr="act5" ve="6">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%secondsleft</Str>
+			<Str sr="arg1" ve="3">%PowerDownTime - %TIMES</Str>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act6" ve="6">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%length</Str>
+			<Str sr="arg1" ve="3">( %secondsleft / ( %PowerDownTime - %PowerDownReset ) ) * %ScreenWidth</Str>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act7" ve="6">
+			<code>58</code>
+			<Str sr="arg0" ve="3">📱 Countdown</Str>
+			<Str sr="arg1" ve="3">SecondsLeft</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3">
+				<var>%length</var>
+			</Int>
+			<Int sr="arg4" val="4"/>
+			<Int sr="arg5" val="50"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%length</lhs>
+					<op>7</op>
+					<rhs>0</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act8" ve="6">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%sceneon</lhs>
+					<op>1</op>
+					<rhs>1</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act9" ve="6">
+			<code>47</code>
+			<Str sr="arg0" ve="3">📱 Countdown</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+	</Task>
+	<Task sr="task5">
+		<cdate>1408797442309</cdate>
+		<edate>1408817610616</edate>
+		<id>5</id>
+		<nme>🔝 Countdown Reset</nme>
+		<pri>10</pri>
+		<Action sr="act0" ve="6">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%PowerDownReset</Str>
+			<Str sr="arg1" ve="3">%TIMES</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act1" ve="6">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%PowerDownTime</Str>
+			<Str sr="arg1" ve="3">%TIMES + %PowerDownSeconds</Str>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task6">
+		<cdate>1408798930038</cdate>
+		<edate>1408802752403</edate>
+		<id>6</id>
+		<nme>📱 Get Screen Size</nme>
+		<pri>10</pri>
+		<Action sr="act0" ve="6">
+			<code>123</code>
+			<Str sr="arg0" ve="3">dumpsys window | grep cur=</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3">%screeninfo</Str>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+		</Action>
+		<Action sr="act1" ve="6">
+			<code>590</code>
+			<Str sr="arg0" ve="3">%screeninfo</Str>
+			<Str sr="arg1" ve="3">cur=</Str>
+			<Int sr="arg2" val="1"/>
+		</Action>
+		<Action sr="act2" ve="6">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%screeninfo</Str>
+			<Str sr="arg1" ve="3">%screeninfo2</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act3" ve="6">
+			<code>590</code>
+			<Str sr="arg0" ve="3">%screeninfo</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+		</Action>
+		<Action sr="act4" ve="6">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%ScreenSize</Str>
+			<Str sr="arg1" ve="3">%screeninfo1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act5" ve="6">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%screensize</Str>
+			<Str sr="arg1" ve="3">%ScreenSize</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act6" ve="6">
+			<code>590</code>
+			<Str sr="arg0" ve="3">%screensize</Str>
+			<Str sr="arg1" ve="3">x</Str>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act7" ve="6">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%ScreenWidth</Str>
+			<Str sr="arg1" ve="3">%screensize1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act8" ve="6">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%ScreenHeight</Str>
+			<Str sr="arg1" ve="3">%screensize2</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task9">
+		<cdate>1408818309001</cdate>
+		<edate>1408818403903</edate>
+		<id>9</id>
+		<nme>🔚 Check/Reset Endtime</nme>
+		<pri>10</pri>
+		<Action sr="act0" ve="6">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%TIMES</lhs>
+					<op>7</op>
+					<rhs>%PowerDownTime</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="6">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%PowerDownTime</Str>
+			<Str sr="arg1" ve="3">0</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act2" ve="6">
+			<code>38</code>
+		</Action>
+	</Task>
+</TaskerData>
