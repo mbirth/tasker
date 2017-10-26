@@ -30,6 +30,16 @@ and notifies **ONLY** if there will be rain today.
 
 Don't forget to change `%WUnderKey` to your API key - get one from [here](http://www.wunderground.com/weather/api).
 
+VoiceWeatherAlarm
+-----------------
+Runs upon stopping my morning alarm. It fetches today's weather prediction from Weather Underground
+and speaks it to you aloud. Prediction includes current temperature, sky condition, humidity percentage, day temperature high, and day temperature low. Additional data can be added be reading the wunderground.com api documentation and editing the tasker details.
+
+Don't forget to change `%WUnderKey` to *your* unique API key - get one from [here](http://www.wunderground.com/weather/api). Also, enter in your name and zip code. Detailed instructions can be found 
+[here](https://github.com/NA-Dev/VoiceWeatherAlarm-Tasker).
+
+You may need to download a Tasker-compatible alarm app, e.g. [Gentle Alarm](https://play.google.com/store/apps/details?id=com.mobitobi.android.gentlealarm&hl=en). Alternatively, you could give the free [ClockTask](https://play.google.com/store/apps/details?id=com.balda.clocktask&hl=en) plugin a try along with your stock alarm app.
+
 
 SayCaller
 ---------
